@@ -8,8 +8,16 @@ const BtHero = () => {
 
     return(
         <div className="herosection">
-            <h1 className="big-hero-print">Supplying Firewood, Ensuring Safety, Anytime, Anywhere</h1>
-            <h2 className="little-hero-print">Safety in Storms, Warmth in Winter: Bates Tree Removal Does It All.</h2>
+            <div className="logo-box">
+                <img src="https://res.cloudinary.com/dlnshpfdv/image/upload/v1705379694/imageedit_2_6105021654_lfac0c.png" alt="logo" className="logo"></img>
+            </div>
+            <div className="text-box">
+                <h1 className="heading">
+                    <span className="primary-heading">Supplying Firewood, Ensuring Safety, Anytime, Anywhere</span>
+                    <span className="sub-heading">Safety in Storms, Warmth in Winter: Bates Tree Removal Does It All.</span>
+                </h1>
+                <a href="/Home" className="btn btn-white btn-animated">Get a quote</a>
+            </div>
         </div>
 
     )

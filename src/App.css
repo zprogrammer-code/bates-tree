@@ -1,14 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .navbar-background{
   display: flex;
   justify-content: space-between;
   background-color: #20314B;
-  height: 10vh;
+  height: 75px;
   position: sticky;
 }
 
 .brand-container{
 margin-left: 7vw;
-margin-top: 10px;
+margin-top: 1vh;
 }
 
 .link-container{
@@ -30,26 +36,155 @@ margin-top: 10px;
 
 
 .herosection{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   height: 95vh;
-  background-size: cover;
-  background-image: url("https://ogden_images.s3.amazonaws.com/www.iamcountryside.com/images/sites/1/2019/03/19084309/AdobeStock_228778938-scaled-e1683315426520.jpeg");
-
+  background-image: linear-gradient(
+    to right bottom,
+    #7ed56fd0,#28b485c2),
+     url("https://ogden_images.s3.amazonaws.com/www.iamcountryside.com/images/sites/1/2019/03/19084309/AdobeStock_228778938-scaled-e1683315426520.jpeg");
+     background-size: cover;
+     background-position: top;
+     position: relative;
+     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
-.big-hero-print{
-margin-top: 20vh;
-margin-left: 10vw;
+
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+.logo {
+  height: 35px;
+}
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+.primary-heading{
+  display: block;
   align-items: center;
   font-family: "Lato", sans-serif;
-  font-weight: 1000;
-  font-size: 45px;
+  font-weight: 700;
+  font-size: 60px;
+  letter-spacing: 15px;
   line-height: 1.7;
-  color: white;
+  color: #fff;
+  backface-visibility: hidden;
+
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
 }
 
-.little-hero-print{
-  margin-left: 33vw;
+.sub-heading{
+  display: block;
   color: beige;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 17.4px;
+  animation: moveInRight 1s ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all .2s;
+  position: relative;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #777;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+transition: all .4s;
+}
+
+.btn-white::after {
+  background-color: #fff;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated {
+  animation: moveInBottom .5s ease-out .75s;
+  animation-fill-mode: backwards;
 }

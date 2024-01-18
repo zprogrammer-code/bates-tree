@@ -4,11 +4,14 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
 .navbar-background{
   display: flex;
   justify-content: space-between;
   background-color: #20314B;
-  height: 75px;
+  height: 7.5rem;
   position: sticky;
 }
 
@@ -26,7 +29,7 @@ margin-top: 1vh;
 
 .nav-links{
   font-weight: 450;
-  margin-left: 18px;
+  margin-left: 1.8rem;
   text-decoration: none;
  flex-direction: row;
   color: white;
@@ -44,16 +47,16 @@ margin-top: 1vh;
      background-size: cover;
      background-position: top;
      position: relative;
-     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+     clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
 }
 
 .logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 4rem;
+  left: 4rem;
 }
 .logo {
-  height: 35px;
+  height: 3.5rem;
 }
 .text-box {
   position: absolute;
@@ -66,15 +69,15 @@ margin-top: 1vh;
 .heading {
   color: #fff;
   text-transform: uppercase;
-  margin-bottom: 60px;
+  margin-bottom: 6rem;
 }
 .primary-heading{
   display: block;
   align-items: center;
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 60px;
-  letter-spacing: 15px;
+  font-size: 6rem;
+  letter-spacing: 1.2rem;
   line-height: 1.7;
   color: #fff;
   backface-visibility: hidden;
@@ -87,9 +90,9 @@ margin-top: 1vh;
 .sub-heading{
   display: block;
   color: beige;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
-  letter-spacing: 17.4px;
+  letter-spacing: 1.3rem;
   animation: moveInRight 1s ease-out;
 }
 
@@ -136,20 +139,22 @@ margin-top: 1vh;
     transform: translate(0);
   }
 }
-
+ @media (max-width:910px) {
+  .primary-heading{font-size: 4rem;}
+ }
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 40px;
+  padding: 1.5rem 4rem;
   display: inline-block;
-  border-radius: 100px;
+  border-radius: 10rem;
   transition: all .2s;
   position: relative;
 }
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0,0,0,.2);
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
 }
 
 .btn:active {
@@ -167,7 +172,7 @@ margin-top: 1vh;
   display: inline-block;
   height: 100%;
   width: 100%;
-  border-radius: 100px;
+  border-radius: 10rem;
   position: absolute;
   top: 0;
   left: 0;

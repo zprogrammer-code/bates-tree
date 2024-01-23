@@ -16,8 +16,8 @@ const BtNav = () => {
                     <img
                      alt=""
                      src="https://res.cloudinary.com/dlnshpfdv/image/upload/v1705162335/imageedit_1_4986758091_m8maes.png"
-                     width="150"
-                     height="61"
+                     width="175"
+                     height="80"
                      className="d-inline-block align-top"
                      />{' '}
                 </Navbar.Brand>

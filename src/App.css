@@ -371,5 +371,17 @@ transition: all .4s;
   top: 4rem;
   }
 
- 
-  /*composition:hover composition__photo:not(:hover) { */
+
+  /*0000000000FEATURES000*/
+  .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4);
+}
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    #7ed56fd0,#28b485c2),
+     url("https://res.cloudinary.com/dlnshpfdv/image/upload/v1706302647/chainsaw_pdb1mt.jpg");
+      background-size: cover;
+}

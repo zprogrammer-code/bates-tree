@@ -14,7 +14,7 @@ const ServiceSection = () => {
                  Emergency Tree Removal and Fast Response Times
               </h2>
             </div>
-              <div className="row">
+              <div className="row1">
                     <div className="col-1-of-2">
                         <h3 className="heading-tertiary u-margin-bottom-small">You're goring to fall in love with nature</h3>
                         <p className="paragraph">
@@ -24,7 +24,7 @@ const ServiceSection = () => {
                         <p className="paragraph">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste odio tempora inventore earum nam quaerat? Veritatis laudantium, officiis esse quibusdam natus totam quae, illo rem ipsam assumenda ipsa quasi? Sapiente.
                         </p>
-                        <a href="#" class="btn-text">Learn more &rarr;</a>
+                        <a href="/Home" class="btn-text">Learn more &rarr;</a>
                     </div>
                     
                     <div className="col-1-of-2">

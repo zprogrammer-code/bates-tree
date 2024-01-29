@@ -206,7 +206,10 @@ transition: all .4s;
   animation-fill-mode: backwards;
 }
 
-/*000000000000000SERVICES0000*/
+
+/*000000000000000SERVICES000000000000000*/
+
+
 .heading-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;
@@ -228,27 +231,23 @@ transition: all .4s;
 
 
 .section-about {
-  background-color: #f7f7f7;
-  padding: 25rem 0;
-  margin-top: -20vh;
-  margin-bottom: 10vh;
+  background-color: rgba(#f7f7f7, .8);
+  padding: 42rem 0;
+  margin-top: -40vh;
 }
-
-.row {
+.row1 {
   max-width: 114rem;
- 
   margin: 0 auto;
-  margin-bottom: 20rem;
+ 
 
   &:not(:last-child) {
       margin-bottom: 8rem; 
-      
   } 
 }
 .col-1-of-2 {
   width: calc((100% - 6rem) / 2);
   float: left;
-  margin-top: 2rem;
+  margin-top: 3rem;
 
   &:not(:last-child) {
     margin-right: 6rem;
@@ -310,7 +309,7 @@ transition: all .4s;
   transition: all .2s;
   outline-offset: 2rem;
   left: 0;
-  top: -2rem;
+  top: -3rem;
 
   &:hover {
     outline: 1.5rem solid #55c57a;
@@ -332,7 +331,7 @@ transition: all .4s;
   transition: all .2s;
   outline-offset: 2rem;
   right: 0;
-  top: 2rem;
+  top: 1rem;
 
   &:hover {
     outline: 1.5rem solid #55c57a;
@@ -354,7 +353,7 @@ transition: all .4s;
   transition: all .2s;
   outline-offset: 2rem;
   left: 20%;
-  top: 10rem;
+  top: 8rem;
 
   &:hover {
     outline: 1.5rem solid #55c57a;
@@ -372,16 +371,55 @@ transition: all .4s;
   }
 
 
-  /*0000000000FEATURES000*/
+  /*0000000000FEATURES0000000000000000000000*/
+
+  .row2 {
+    max-width: 114rem;
+    margin: 0 auto;
+    margin-top: -15rem;
+  
+    &:not(:last-child) {
+        margin-bottom: 8rem; 
+    } 
+  }
   .col-1-of-4 {
     width: calc((100% - 3 * 6rem) / 4);
+    float: left;
+    &:not(:last-child) {
+      margin-right: 6rem;
+    }
 }
 
 .section-features {
-  padding: 20rem 0;
+  padding: 35rem 0;
   background-image: linear-gradient(
     to right bottom,
     #7ed56fd0,#28b485c2),
-     url("https://res.cloudinary.com/dlnshpfdv/image/upload/v1706302647/chainsaw_pdb1mt.jpg");
+     url("https://res.cloudinary.com/dlnshpfdv/image/upload/v1706287557/83f55eb6-2e06-40b8-8dd4-032d0df50b49_dvftl0.png");
       background-size: cover;
+      transform: skewY(-4.5deg);
+      
+
+      & > * {
+          transform: skewY(5deg);
+      }
 }
+
+
+.feature-box {
+  background-color: #f7f7f7;
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(#000, .15);
+  transform: transform .3s;
+  padding-top: 3rem;
+
+
+  &:hover {
+      transform: translateY(-1.5rem) scale(1.03);
+  }
+
+}
+

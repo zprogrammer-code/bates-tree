@@ -1,5 +1,7 @@
 import React from "react";
-import "/home/zprogrammercode/BatesTree/bates-tree/src/App.css";
+import "/home/zprogrammercode/BatesTree/bates-tree/src/css/style.css";
+import '/home/zprogrammercode/BatesTree/bates-tree/src/App.css';
+
 
 const FeatureSection = () => {
 

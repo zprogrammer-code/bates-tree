@@ -1,0 +1,58 @@
+.herosection{
+    height: 95vh;
+    background-image: linear-gradient(
+      to right bottom,
+      #7ed56fd0,#28b485c2),
+       url(https://ogden_images.s3.amazonaws.com/www.iamcountryside.com/images/sites/1/2019/03/19084309/AdobeStock_228778938-scaled-e1683315426520.jpeg);
+       background-size: cover;
+       background-position: top;
+       position: relative;
+       clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  }
+  
+  .logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+  .logo {
+    height: 4rem;
+  }
+  .text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .heading {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+  }
+  .primary-heading{
+    display: block;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 1000;
+    font-size: 4rem;
+    letter-spacing: 1.2rem;
+    line-height: 1.7;
+    color: #fff;
+    backface-visibility: hidden;
+  
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+  
+  .sub-heading{
+    display: block;
+    color: beige;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1.2rem;
+    line-height: 1.2;
+    animation: moveInRight 1s ease-out;
+  }

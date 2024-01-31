@@ -1,0 +1,29 @@
+.navbar-background{
+    display: flex;
+    justify-content: space-between;
+    background-color: #20314B;
+    height: 12.5rem;
+    position: sticky;
+  }
+  
+  .brand-container{
+  margin-left: 7vw;
+  margin-top: 3vh;
+  }
+  
+  .link-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 8vw;
+  }
+  
+  .nav-links{
+    text-transform: uppercase;
+    margin-left: 4rem;
+    font-size: 2rem;
+    font-weight:500;
+    text-decoration: none;
+   flex-direction: row;
+    color: white;
+  }

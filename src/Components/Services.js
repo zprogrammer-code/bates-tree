@@ -1,42 +1,123 @@
 import React from "react";
-import "/home/zprogrammercode/BatesTree/bates-tree/src/App.css";
+import "/home/zprogrammercode/BatesTree/bates-tree/src/css/style.css";
+import '/home/zprogrammercode/BatesTree/bates-tree/src/App.css';
 
 
-const ServiceSection = () => {
 
+const  ServiceCards = () => {
 
 
     return(
         <>
-        <section class="section-about">
-            <div className="u-center-text u-margin-bottom-big">
-                <h2 className="heading-secondary">
-                 Emergency Tree Removal and Fast Response Times
-              </h2>
-            </div>
-              <div className="row1">
-                    <div className="col-1-of-2">
-                        <h3 className="heading-tertiary u-margin-bottom-small">You're goring to fall in love with nature</h3>
-                        <p className="paragraph">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste odio tempora inventore earum nam quaerat? Veritatis laudantium, officiis esse quibusdam natus totam quae, illo rem ipsam assumenda ipsa quasi? Sapiente.
-                        </p>
-                        <h3 className="heading-tertiary u-margin-bottom-small">Live adventures like you never have before</h3>
-                        <p className="paragraph">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste odio tempora inventore earum nam quaerat? Veritatis laudantium, officiis esse quibusdam natus totam quae, illo rem ipsam assumenda ipsa quasi? Sapiente.
-                        </p>
-                        <a href="/Home" class="btn-text">Learn more &rarr;</a>
+        <section class="section-services">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">
+                       Most popular services
+                    </h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-1-of-3">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--1">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span card__heading-span--1">
+                                        Tree Removal
+                                    </span>
+                                </h4>
+                                <div class="card__details">
+                                    <ul>
+                                        <li class="li">Arborist Equipment</li>
+                                        <li class="li">Safety and Property Protection measures</li>
+                                        <li class="li">Labor and clean up</li>
+                                        <li class="li">Transport Vehicle and Trailer</li>
+                                        <li class="li">Disposing Material</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card__side card__side--back card__side--back-1">
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-only">Avg</p>
+                                        <p class="card__price-value">$650</p>
+                                    </div>
+                                    <a href="/Home" class="btn btn--white">Book now!</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div className="col-1-of-2">
-                    <div class="composition"><img src="https://res.cloudinary.com/dlnshpfdv/image/upload/v1706287541/istockphoto-172439438-612x612_hkjsab.jpg" alt="about1" className="composition__photo composition__photo--p1"/></div>
-                        <div class="composition"><img src="https://res.cloudinary.com/dlnshpfdv/image/upload/v1706287550/GettyImages-1294477129-2_nbza2u.webp" alt="about2" className="composition__photo composition__photo--p2"/></div>
-                        <div class="composition"><img src="https://res.cloudinary.com/dlnshpfdv/image/upload/v1706287557/83f55eb6-2e06-40b8-8dd4-032d0df50b49_dvftl0.png" alt="about3" className="composition__photo composition__photo--p3"/></div>
+                    <div class="col-1-of-3">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--2">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span card__heading-span--2">
+                                        Fire Wood Delivery
+                                    </span>
+                                </h4>
+                                <div class="card__details">
+                                    <ul>
+                                        <li class="li">Processing Equipment</li>
+                                        <li class="li">Safety and Quality Garuntee</li>
+                                        <li class="li">Loading and Unload</li>
+                                        <li class="li">Transport Vehicle and Trailer</li>
+                                        <li class="li">Dry Wood</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card__side card__side--back card__side--back-2">
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-only">Avg</p>
+                                        <p class="card__price-value">$250/CORT</p>
+                                    </div>
+                                    <a href="/Home" class="btn btn--white">Order!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-of-3">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--3">
+                                    &nbsp;
+                                </div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span card__heading-span--3">
+                                        HOA and Package Deals
+                                    </span>
+                                </h4>
+                                <div class="card__details">
+                                    <ul>
+                                        <li class="li">Neighborhoods or Multiple</li>
+                                        <li class="li">Safety and Property Protection measures</li>
+                                        <li class="li">Labor and clean up</li>
+                                        <li class="li">Transport Vehicle and Trailer</li>
+                                        <li class="li">Disposing Material</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card__side card__side--back card__side--back-3">
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-only">Avg</p>
+                                        <p class="card__price-value">$1200+</p>
+                                    </div>
+                                    <a href="/Home" class="btn btn--white">Get Estimate!</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-        
-    </section>
-    </>
+            </section>
+        </>
+
     )
 }
 
-export default ServiceSection;
+export default ServiceCards;

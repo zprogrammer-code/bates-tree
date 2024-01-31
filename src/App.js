@@ -1,16 +1,19 @@
 import './App.css';
+import '/home/zprogrammercode/BatesTree/bates-tree/src/css/style.css';
 import FeatureSection from './Components/Features';
 import BtHero from './Components/Herosection';
 import BtNav from './Components/Navbar';
-import ServiceSection from './Components/Services';
+import AboutSection from './Components/About';
+import ServiceCards from './Components/Services';
 
 function App() {
   return (
     <div className="App">
       <BtNav/>
       <BtHero/>
-      <ServiceSection/>
+      <AboutSection/>
       <FeatureSection/>
+      <ServiceCards/>
     </div>
   );
 }

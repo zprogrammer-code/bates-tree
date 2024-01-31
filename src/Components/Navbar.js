@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import"/home/zprogrammercode/BatesTree/bates-tree/src/App.css";
+import"/home/zprogrammercode/BatesTree/bates-tree/src/css/style.css";
+
 
 
 

@@ -114,6 +114,10 @@ const  ServiceCards = () => {
                         </div>
                     </div>
                 </div>
+
+                <div class="u-center-text u-margin-top-big">
+                    <a href="/Quote" class="btn btn--green">Recieve a Customized Bid</a>
+                </div>
             </section>
         </>
 

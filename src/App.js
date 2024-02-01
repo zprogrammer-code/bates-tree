@@ -1,5 +1,5 @@
-import './App.css';
-import '/home/zprogrammercode/BatesTree/bates-tree/src/css/style.css';
+import './index.css';
+
 import FeatureSection from './Components/Features';
 import BtHero from './Components/Herosection';
 import BtNav from './Components/Navbar';

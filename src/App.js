@@ -5,6 +5,7 @@ import BtHero from './Components/Herosection';
 import BtNav from './Components/Navbar';
 import AboutSection from './Components/About';
 import ServiceCards from './Components/Services';
+import ReviewSection from './Components/Reviews';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <AboutSection/>
       <FeatureSection/>
       <ServiceCards/>
+      <ReviewSection/>
     </div>
   );
 }

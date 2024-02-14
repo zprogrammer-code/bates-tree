@@ -1,5 +1,6 @@
 import React from "react";
 import video from "/home/zprogrammercode/BatesTree/bates-tree/src/Assets/IMG_2947.mp4";
+import companyLogo from "/home/zprogrammercode/BatesTree/bates-tree/src/Assets/imageedit_2_6105021654.png";
 import "/home/zprogrammercode/BatesTree/bates-tree/src/css/style.css";
 
 const ReviewSection = () => {
@@ -24,6 +25,7 @@ const ReviewSection = () => {
                 <div className="row">
                     <div className="review">
                         <figure className="review__shape">
+                            <img src={companyLogo} alt="person on a tour" className="review__img"/>
                             <figcaption className="review__caption">Mary Smith</figcaption>
                         </figure>
                         <div className="review__text">
@@ -40,6 +42,7 @@ const ReviewSection = () => {
                 <div className="row">
                     <div className="review">
                         <figure className="review__shape">
+                            <img src={companyLogo} alt="person on a tour" className="review__img"/>
                             <figcaption className="review__caption">George Jacobs</figcaption>
                         </figure>
                         <div className="review__text">

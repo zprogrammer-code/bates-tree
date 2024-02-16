@@ -6,6 +6,7 @@ import BtNav from './Components/Navbar';
 import AboutSection from './Components/About';
 import ServiceCards from './Components/Services';
 import ReviewSection from './Components/Reviews';
+import BookNow from './Components/Booknow';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <FeatureSection/>
       <ServiceCards/>
       <ReviewSection/>
+      <BookNow/>
     </div>
   );
 }

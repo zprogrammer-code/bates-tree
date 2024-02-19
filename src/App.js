@@ -7,6 +7,7 @@ import AboutSection from './Components/About';
 import ServiceCards from './Components/Services';
 import ReviewSection from './Components/Reviews';
 import BookNow from './Components/Booknow';
+import BtFooter from './Components/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <ServiceCards/>
       <ReviewSection/>
       <BookNow/>
+      <BtFooter/>
     </div>
   );
 }

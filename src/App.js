@@ -8,10 +8,12 @@ import ServiceCards from './Components/Services';
 import ReviewSection from './Components/Reviews';
 import BookNow from './Components/Booknow';
 import BtFooter from './Components/Footer';
+import BurgerMenu from './Components/Navigation';
 
 function App() {
   return (
     <div className="App">
+      <BurgerMenu/>
       <BtNav/>
       <BtHero/>
       <AboutSection/>

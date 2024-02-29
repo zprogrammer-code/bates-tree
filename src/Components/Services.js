@@ -43,7 +43,7 @@ const  ServiceCards = () => {
                                         <p className="card__price-only">Avg</p>
                                         <p className="card__price-value">$650</p>
                                     </div>
-                                    <a href="/Home" className="btn btn--white">Book now!</a>
+                                    <a href="#popup" className="btn btn--white btn-res">Book now!</a>
                                 </div>
                             </div>
                         </div>
@@ -75,7 +75,7 @@ const  ServiceCards = () => {
                                         <p className="card__price-only">Avg</p>
                                         <p className="card__price-value">$250/CORT</p>
                                     </div>
-                                    <a href="/Home" className="btn btn--white">Order!</a>
+                                    <a href="#popup" className="btn btn--white btn-res">Order!</a>
                                 </div>
                             </div>
                         </div>
@@ -107,7 +107,7 @@ const  ServiceCards = () => {
                                         <p className="card__price-only">Avg</p>
                                         <p className="card__price-value">$1200+</p>
                                     </div>
-                                    <a href="/Home" className="btn btn--white">Get Estimate!</a>
+                                    <a href="#popup" className="btn btn--white btn-res">Get Estimate!</a>
                                 </div>
                             </div>
                         </div>

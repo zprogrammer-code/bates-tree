@@ -9,11 +9,13 @@ import ReviewSection from './Components/Reviews';
 import BookNow from './Components/Booknow';
 import BtFooter from './Components/Footer';
 import BurgerMenu from './Components/Navigation';
+import EmailPopup from './Components/Emailpopup';
 
 function App() {
   return (
     <div className="App">
       <BurgerMenu/>
+      <EmailPopup/>
       <BtNav/>
       <BtHero/>
       <AboutSection/>

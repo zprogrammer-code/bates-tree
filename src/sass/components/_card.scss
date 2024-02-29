@@ -20,7 +20,6 @@
         backface-visibility: hidden;
         border-radius: 3px;
         overflow: hidden;
-        box-shadow: $box-shadow-1;
 
         &--front {
             background-color: $color-white;
@@ -67,6 +66,8 @@
         background-blend-mode: screen;
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
 
         &--1 {
             background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
@@ -165,7 +166,55 @@
         &__price-value {
             font-size: 6rem;
             font-weight: 100;
+        }
 
+        @include respond(tab-port) {
+            height: auto;
+            border-radius: 3px;
+            background-color: $color-white;
+            box-shadow: $box-shadow-1;
+
+            &__side {
+                height: auto;
+                position: relative;
+                box-shadow: none;
+                
+                &--back {
+                    transform: rotateY(0);
+                    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+                }
+            }
+
+            &:hover &__side--front {
+                transform: rotateY(0);
+            }
+        
+           
+        
+            //FRONT SIDE STYLING
+                &__cta {
+                    position: relative;
+                    top: 0%;
+                    left: 0%;
+                    transform: translate(0);
+                    width: 100%;
+                    padding: 7rem, 4rem, 4rem, 4rem;
+                }
+        
+                &__price-box {
+                    margin-top: 4rem;
+                    margin-bottom: 3rem;
+                }
+        
+                &__price-only {
+                    font-size: 1.4rem;
+                    text-transform: uppercase;
+                }
+        
+                &__price-value {
+                    font-size: 6rem;
+                    opacity: .7;
+                }
         }
 
 }

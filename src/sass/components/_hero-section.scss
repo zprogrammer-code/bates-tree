@@ -45,6 +45,10 @@
     animation-name: moveInLeft;
     animation-duration: 2s;
     animation-timing-function: ease-out;
+
+    @include respond(phone) {
+      font-size: 5rem;
+    }
   }
   
   .sub-heading{
@@ -55,4 +59,8 @@
     letter-spacing: 1.2rem;
     line-height: 1.2;
     animation: moveInRight 1s ease-out;
+
+    @include respond(phone) {
+      font-size: 3rem;
+    }
   }

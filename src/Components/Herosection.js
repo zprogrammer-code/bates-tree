@@ -18,7 +18,7 @@ const BtHero = () => {
                     <span className="primary-heading">Supplying Firewood, Ensuring Safety, Anytime, Anywhere</span>
                     <span className="sub-heading">Safety in Storms, Warmth in Winter: Bates Tree Removal Does It All.</span>
                 </h1>
-                <a href="/Home" className="btn btn-white btn-animated">Get a quote</a>
+                <a href="#popup" className="btn btn-white btn-animated">Get a quote</a>
             </div>
         </div>
 

@@ -26,10 +26,8 @@ const BtNav = () => {
             </Container>
              <Container className="link-container">
                  <Nav className="me-auto">
-                    <Nav.Link className="nav-links" href="#home">Home</Nav.Link>
-                     <Nav.Link className="nav-links" href="#features">Pricing</Nav.Link>
-                     <Nav.Link className="nav-links" href="#pricing">Blog</Nav.Link>
-                     <Nav.Link className="nav-links" href="#pricing">Contact</Nav.Link>
+                    <Nav.Link className="nav-links" href="#home">(719)-440-7363</Nav.Link>
+                     
                  </Nav>
              </Container>
         </Navbar>

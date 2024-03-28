@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
@@ -18,10 +19,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "watch:sass": "sass src/sass/main.scss css/style.css -w",
-
-    "devserver": "live-server",
-    
+    "watch:sass": "sass src/sass/main.scss src/css/style.css -w",
     "compile:sass": "sass src/sass/main.scss css/style.comp.css",
     "concat:css": "concat -o css/style.concat.css css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
